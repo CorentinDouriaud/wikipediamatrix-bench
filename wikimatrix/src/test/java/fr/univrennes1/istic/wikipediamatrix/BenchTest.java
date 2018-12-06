@@ -32,7 +32,7 @@ public class BenchTest {
 	    int nurl = 0;
 	    while ((url = br.readLine()) != null) {
 	       String wurl = BASE_WIKIPEDIA_URL + url; 
-	       System.out.println("Wikipedia url: " + wurl);
+	       //System.out.println("Wikipedia url: " + wurl);
 	       JSoupTest jsouptest = new JSoupTest();
 	       String csvFileName = mkCSVFileName(url, 1);
 	       System.out.println("CSV file name: " + csvFileName);
