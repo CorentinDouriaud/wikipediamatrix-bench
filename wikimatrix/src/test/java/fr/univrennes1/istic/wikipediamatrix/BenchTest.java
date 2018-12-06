@@ -51,8 +51,6 @@ public class BenchTest {
 	       // TODO: the HTML extractor should save CSV files into output/HTML
 	       // see outputDirHtml 
 	       
-	       // TODO: the Wikitext extractor should save CSV files into output/wikitext
-	       // see outputDirWikitext      
 	       
 	       nurl++;	       
 	    }
