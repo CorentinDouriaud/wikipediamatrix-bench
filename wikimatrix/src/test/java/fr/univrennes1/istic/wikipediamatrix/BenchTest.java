@@ -36,7 +36,7 @@ public class BenchTest {
 	       JSoupTest jsouptest = new JSoupTest();
 	       String csvFileName = mkCSVFileName(url, 1);
 	       System.out.println("CSV file name: " + csvFileName);
-	       jsouptest.testUrlCanon(wurl, csvFileName);
+	       jsouptest.testUrlCanon(wurl, url);
 	       // the *second* (if any) will be exported to a CSV file called
 	       // "Comparison_of_operating_system_kernels-2.csv"
 
