@@ -16,7 +16,7 @@ public class Titre {
 			//System.out.println(case1.information);
 			
 		}
-		LinkedHashSet set = new LinkedHashSet();
+		LinkedHashSet set = new LinkedHashSet(); //Permet d'éliminer les titres doublons et de conserver l'ordre
 		set.addAll(liste);
 		String[] tab= (String[]) set.toArray(new String[liste.size()]);
 		return tab; 

@@ -13,7 +13,7 @@ import java.nio.file.Paths;
 
 public class TestFonctionnalites {
 	
-	@Test
+	@Test //Test du nombre de colonnes du CSV Canon
 	public void testCSVCanonColonnes(){
 		JSoupTest Jsouptest = new JSoupTest();
 		try {
@@ -27,7 +27,7 @@ public class TestFonctionnalites {
 			e.printStackTrace();
 		}
 	}
-	@Test
+	@Test //Test du nombre de lignes du CSV Canon
 	public void testCSVCanonLignes () {
 		JSoupTest Jsouptest = new JSoupTest();
 		try {
@@ -42,7 +42,7 @@ public class TestFonctionnalites {
 		}
 	}
 	
-	@Test
+	@Test //Test de la récupération des titres d'un tableau
 	public void testTitre() {
 		Titre titre = new Titre();
 		Case case1 = new Case();
@@ -58,7 +58,7 @@ public class TestFonctionnalites {
 		titre.formatCSV().equals(str);
 	}
 	
-	@Test
+	@Test //Test du test de validité d'une Url
 	public void testUrlFausse() {
 		JSoupTest jsouptest = new JSoupTest();
 		jsouptest.isUrlFausse("https://en.wikipedia.org/wiki/Comparison_of_Norwegian_BokmÃ¥l_and_Standard_Danish");

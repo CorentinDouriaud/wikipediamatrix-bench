@@ -6,7 +6,7 @@ import java.util.List;
 public class Ligne {
 	List<Case> cases= new ArrayList<Case>();
 	
-	public String[] formatCSV() {
+	public String[] formatCSV() { //Renvoie un tableau qui sera donné en paramètre pour écrire une ligne du CSV
 		List<String> liste= new ArrayList<String>();
 		for (Case case1 : cases) {
 			liste.add(case1.information);

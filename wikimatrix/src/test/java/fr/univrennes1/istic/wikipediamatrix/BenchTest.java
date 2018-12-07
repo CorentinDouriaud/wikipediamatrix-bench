@@ -9,15 +9,9 @@ import java.io.FileReader;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.junit.Test;
-//Test de mise à jour
 public class BenchTest {
 	
-	/*
-	*  the challenge is to extract as many relevant tables as possible
-	*  and save them into CSV files  
-	*  from the 300+ Wikipedia URLs given
-	*  see below for more details
-	**/
+
 	@Test
 	public void testBenchExtractors() throws Exception {
 		
@@ -37,15 +31,7 @@ public class BenchTest {
 	       String csvFileName = mkCSVFileName(url, 1);
 	       System.out.println("CSV file name: " + csvFileName);
 	       jsouptest.testUrlCanon(wurl, url);
-	       // the *second* (if any) will be exported to a CSV file called
-	       // "Comparison_of_operating_system_kernels-2.csv"
-
-	       
-	       // TODO: the HTML extractor should save CSV files into output/HTML
-	       // see outputDirHtml 
-	       
-	       
-	       nurl++;	       
+	       nurl++;      
 	    }
 	    
 	    br.close();	    
