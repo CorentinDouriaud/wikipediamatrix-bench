@@ -15,8 +15,12 @@ import org.junit.Test;
 public class JSoupTest {
 	
 	@Test
-	public void testUrlCanon(String url, String stockage) throws IOException {
+	public Informations testUrlCanon(String url, String stockage) throws IOException {
 		CSVWriter csvwriter= new CSVWriter();
+		int nbreColonnes = 0;
+		int nbreLignes =0;
+		List<String> titresListe= new ArrayList<String>();
+		Informations informations = new Informations();
 		//String url = "https://en.wikipedia.org/wiki/Comparison_of_Canon_EOS_digital_cameras"; Mettre cette ligne pour tester le cas Canon ,et enlever la boucle for
 		if (isUrlFausse(url)) { 
 			System.out.println("L'adresse" + url + " n \' est pas accessible ");
@@ -31,12 +35,15 @@ public class JSoupTest {
 			Elements titresL = titres.select("th");
 			Titre titreObj = new Titre(); 
 			for (Element titreEle : titresL) {
+				nbreColonnes = nbreColonnes +1;
 				Case case2= new Case();
 				case2.information=titreEle.text();
 				titreObj.cases.add(case2);
+				titresListe.add(titreEle.text());
 			}
 			tableau.titre=titreObj;
 			for (Element headline2 : newsHeadlines2) {
+				nbreLignes = nbreLignes +1;
 				Ligne ligne=new Ligne();
 				Elements newsHeadLines3 = headline2.select("td"); // On récupère nos données grâce à cette ligne
 				for (Element headline3 : newsHeadLines3) {
@@ -48,9 +55,13 @@ public class JSoupTest {
 			}
 			String titre = mkCSVFileName(stockage, n); // On définit le nom de notre fichier CSV
 			n++;
-			csvwriter.writeCSV(tableau,titre); // On écrit notre fichier CSV (test)
+			csvwriter.writeCSV(tableau,titre); // On écrit notre fichier CSV 
 		}
 		}
+		informations.setNbreColonnes(nbreColonnes);
+		informations.setNbreLignes(nbreLignes);
+		informations.setTitresListe(titresListe);
+		return informations;
 	}
 	
 	public boolean isUrlFausse(String url) {
