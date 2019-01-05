@@ -2,7 +2,7 @@ package fr.univrennes1.istic.wikipediamatrix;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/*Les informations d'une feuille excel*/
 public class Informations {
 	private int nbreLignes;
 	private int nbreColonnes;
