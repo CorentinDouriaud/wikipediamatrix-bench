@@ -3,21 +3,22 @@
 
 ## Statistiques
 
-En l'état, l'extracteur permet de créer 692 fichiers csv (dont 2 fichiers contenant les informations sur les nombre de lignes et colonnes des fichiers csv,
+En l'état, l'extracteur permet de créer 694 fichiers csv (dont 2 fichiers contenant les informations sur les nombre de lignes et colonnes des fichiers csv,
 ainsi que l'ensemble des titres). Les statistiques sur les fichiers sont les suivantes :
 
 
-* Nombre minimal de colonnes : 2
-* Nombre maximal de colonnes : 30
-* Nombre moyen de colonnes : 8,9
-* Variance du nombre de colonnes : 4,5
+* Nombre minimal de colonnes : 0
+* Nombre maximal de colonnes : 333
+* Nombre moyen de colonnes : 18,05
+* Variance du nombre de colonnes : 33.4
 
 
 * Nombre minimal de lignes : 0
-* Nombre maximal de lignes : 593
-* Nombre moyen de lignes : 28,1
-* Variance du nombre de lignes : 39,2
+* Nombre maximal de lignes : 702
+* Nombre moyen de lignes : 60.4
+* Variance du nombre de lignes : 104.65
 
+Il y a 131 tableaux vides.
 
 Le titre de colonne vide apparaît 89 fois dans les tableaux.
 
