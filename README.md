@@ -4,7 +4,7 @@ Le but est d'extraire des tableaux de 300 pages wikipedia. On utilise pour cela 
 
 ### Diagramme de classes
 
-![Diagramme UML](diagramme_classes.png "Diagramme UML")
+![Diagramme UML](diagramme_classes.PNG "Diagramme UML")
 
 La classe principale MatrixExtractor réalise la plupart des traitements nécessaires à la lecture du fichier HTML source de la page wikipedia pour récupérer les tableaux, ainsi que l'export de ces tableaux au format csv.
 
