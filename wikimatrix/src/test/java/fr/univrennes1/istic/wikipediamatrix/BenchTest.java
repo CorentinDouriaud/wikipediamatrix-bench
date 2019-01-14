@@ -42,6 +42,14 @@ public class BenchTest {
 	       System.out.println("CSV file name: " + csvFileName);
 	       Informations informations = jsouptest.testUrlCanon(wurl, url);
 	       titresListe.addAll(informations.getTitresListe());
+		int i = 0;
+	        for(String s : titresListe) {
+	        	if (s.equals("")) {
+	                i++;
+	               // System.out.println(i);
+	        	}
+
+	        }
 	       nombreLignes.add(informations.getNbreLignes());
 	       nombreColonnes.add(informations.getNbreColonnes());
 	       nurl++;      
