@@ -20,11 +20,11 @@ ainsi que l'ensemble des titres). Les statistiques sur les fichiers sont les sui
 
 Il y a 131 tableaux vides.
 
-Le titre de colonne vide apparaît 89 fois dans les tableaux.
+Le titre de colonne vide apparaît 93 fois dans les tableaux.
 
 ### Limites de l'extracteur
 
-Les tests effectués sur l'URL Canon nous indique que le nombre de lignes et de colonnes est bien respecté.
+Les tests effectués sur l'URL Canon nous indique que le nombre de lignes et de colonnes est bien respecté (les colonnes et les lignes ont été comptées à la main pour être comparées à ce qui a été fait par l'extracteur).
 
 
 L'extracteur permet d'avoir les tabelaux de la classe "wikitable sortable" dont les titres sont dans des balises "th" et les autres lignes dans des balises "td".
